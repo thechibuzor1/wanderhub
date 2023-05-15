@@ -1,13 +1,32 @@
 .boxBody {
+  margin-top: 80px;
   position: relative;
-  color: white;
+  color: black;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
 }
 
 .boxImg {
   width: "100%";
   border-radius: 16px;
   height: "100%";
-  box-shadow: 10px 10px 0px 0px #000000;
+  box-shadow: 8px 8px 0px 0px #000000;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.boxImg:hover {
+  transform: scale(1.01);
+}
+
+.boxBody p {
+  font-family: "ClashGrotesk-Variable", "ClashGrotesk-Extralight",
+    "ClashGrotesk-Light", "ClashGrotesk-Regular", "ClashGrotesk-Medium",
+    "ClashGrotesk-Semibold", "ClashGrotesk-Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 40px;
 }
 .row {
   margin: 1rem;

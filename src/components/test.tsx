@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Boxes from "./Boxes";
+import NavBar from "./NavBar";
 
 const Test = () => {
   const [locations, setLocations] = useState([]);
