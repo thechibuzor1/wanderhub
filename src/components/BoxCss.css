@@ -1,10 +1,9 @@
 .boxBody {
-  margin-top: 80px;
-  position: relative;
   color: black;
-  width: 400px;
+  width: 340px;
   display: flex;
   flex-direction: column;
+  margin: 1rem;
 }
 
 .boxImg {
@@ -18,19 +17,109 @@
 .boxImg:hover {
   transform: scale(1.01);
 }
+.loader {
+  height: 40vh;
 
+  align-self: center;
+}
+.scroll-container {
+  padding-top: 100px;
+  /*  background-color: aqua; */
+  overflow: hidden;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+.scroll-container p {
+  text-align: center;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+  overflow: hidden;
+}
+.modalImage {
+  border-radius: 16px;
+}
+.modalClose {
+  margin-top: 10px;
+  align-self: flex-end;
+  user-select: none;
+  font-family: "Satoshi-Light", "Satoshi-Regular", "Satoshi-Medium",
+    "Satoshi-Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.modalTextHeader {
+  user-select: none;
+  font-family: "ClashGrotesk-Variable", "ClashGrotesk-Extralight",
+    "ClashGrotesk-Light", "ClashGrotesk-Regular", "ClashGrotesk-Medium",
+    "ClashGrotesk-Semibold", "ClashGrotesk-Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+}
+.modalClose:hover {
+  cursor: pointer;
+}
+
+.modalText {
+  user-select: none;
+  font-family: "Satoshi-Light", "Satoshi-Regular", "Satoshi-Medium",
+    "Satoshi-Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  color: #000000;
+}
+.flexHor {
+  display: flex;
+}
+
+p {
+  user-select: none;
+}
+body {
+  user-select: none;
+}
 .boxBody p {
   font-family: "ClashGrotesk-Variable", "ClashGrotesk-Extralight",
     "ClashGrotesk-Light", "ClashGrotesk-Regular", "ClashGrotesk-Medium",
     "ClashGrotesk-Semibold", "ClashGrotesk-Bold";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 20px;
   line-height: 40px;
+  user-select: none;
 }
 .row {
-  margin: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   grid-gap: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .boxBody {
+    width: 340px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .boxBody {
+    width: 350px;
+  }
+
+  .boxBody p {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .boxBody {
+    width: 320px;
+  }
 }

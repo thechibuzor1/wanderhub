@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+/* splash */
+.intro_logo {
+  height: 95vh;
+  width: 100%;
+  align-self: center;
+}
+.swoop {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+}
+
+/*  MEDIA QUERIES (MEDIUM DEVICES) */
+@media screen and (max-width: 1024px) {
+  .intro_logo {
+    height: 100%;
+    width: 100%;
+  }
+  .swoop {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}
+/*  MEDIA QUERIES (SMALL DEVICES) */
+@media screen and (max-width: 600px) {
+  .intro_logo {
+    height: 100%;
+    width: 100%;
+    align-self: center;
+  }
+  .swoop {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}
