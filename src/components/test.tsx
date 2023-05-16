@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { throttle } from "lodash";
 import Modal from "react-modal";
 import Boxes from "./Boxes";
 import loader from "../assets/95619-webpage-loading-animation.json";
@@ -11,7 +10,6 @@ const Test = () => {
   const [loading, setLoading] = useState(false);
   const [modalData, setModalData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const pageSize = 50; // Adjust the page size as per your requirement
   const uniqueXids = new Set<string>();
 
   const apiGet = async () => {
@@ -175,7 +173,7 @@ const Test = () => {
         </div>
       )}
       {data?.wikipedia && (
-        <a href={data?.wikipedia} target="_blank">
+        <a href={data?.wikipedia} target="_blank" rel="noreferrer">
           <p className="modalText" style={customModalStyles.country}>
             Go to wikipedia
           </p>

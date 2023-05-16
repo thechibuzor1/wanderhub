@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "./logo.svg";
-import "./clash-grotesk.css";
+ import "./clash-grotesk.css";
 import "./satoshi.css";
 import "./App.css";
 import Test from "./components/test";
